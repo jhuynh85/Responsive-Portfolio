@@ -17,8 +17,7 @@ h2 {
 }
 
 body {
-	width: 960px;
-	min-width: 960px;
+	width: 100%;
 	background-image: url("../images/concrete_seamless.png");
 }
 
@@ -28,16 +27,16 @@ ul {
 
 li {
 	display: inline;
-	padding: 20px 20px 18px 20px;
+	padding: 20px 20px 20px 20px;
 }
 
-a:hover li, a:focus li {
+li:hover {
 	background-color: #4aaaa5;
 	color: #ffffff;
 }
 
-a:focus {
-	outline: 0;
+li a:hover {
+	opacity: 1;
 }
 
 a {
@@ -45,15 +44,20 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	opacity: 0.65;
+}
+
 header {
 	background-color: #ffffff;
 	position: fixed;
+	z-index: 3;
 	top: 0;
 	left: 0;
 	width: 100%;
 	min-width: 725px;
 	padding-left: 100px;
-	border-bottom: 2px solid #cccccc;
+	border-bottom: 3px solid #cccccc;
 }
 
 #name {
@@ -70,20 +74,20 @@ nav {
 }
 
 #padding_div {
-	height: 75px;
+	height: 85px;
 }
 
 .container {
-	margin-left: 50px;
-	width: 100%;
+	width: 960px;
+	margin: 0 auto;
 }
 
 #content {
 	float: left;
-	width: 610px;
+	width: 564px;
 	background-color: #ffffff;
-	border: 2px solid #dddddd;
-	padding: 20px;
+	border: 3px solid #dddddd;
+	padding: 40px;
 }
 
 #profile_pic {
@@ -94,40 +98,79 @@ nav {
 
 #sidebar {
 	float: right;
-	width: 230px;
+	width: 224px;
 	background-color: #ffffff;
 	text-align: center;
-	border: 2px solid #dddddd;
+	border: 3px solid #dddddd;
 	padding: 20px;
 }
 
 footer {
+	position: fixed;
+	z-index: 3;
 	font-size: 8pt;
 	background-color: gray;
 	color: #ffffff;
-	position: fixed;
 	bottom: 0;
 	left: 0;
 	text-align: center;
 	width: 100%;
 	padding: 20px 0 20px 0;
+	border-top: 7px solid #4aaaa5;
 }
 
 .project-left {
+	position: relative;
 	float: left;
-	margin: 10px 10px 10px 50px;
+	margin: 10px 10px 10px 40px;
 }
 
 .project-right {
+	position: relative;
 	float: right;
-	margin: 10px 50px 10px 10px;
+	margin: 10px 40px 10px 10px;
+}
+
+.project_name {
+	position: absolute;
+	left: -3px;
+	bottom: 7%;
+	width: 206px;
+	padding: 20px 0 20px 0;
+	background-color:  #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+}
+
+form {
+	margin-top: 20px;
+}
+
+#name_input, #email_input, #message_input {
+	width: 100%;
+	max-width: 100%;
+	margin: 10px 0 20px 0;
+	line-height: 2em;
+}
+
+#submit_button {
+	float: left;
+	text-decoration: none;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 10px 20px 10px 20px;
 }
 
 .text {
-	line-height: 150%;
+	line-height: 2em;
 }
 
 .clear {
 	clear: both;
 	margin: 0;
+}
+
+.bar {
+	color: #cccccc;
 }
