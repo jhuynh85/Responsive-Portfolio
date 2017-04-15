@@ -1,0 +1,133 @@
+html {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #4aaaa5;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+body {
+	width: 960px;
+	min-width: 960px;
+	background-image: url("../images/concrete_seamless.png");
+}
+
+ul {
+	padding-top: 21px;
+}
+
+li {
+	display: inline;
+	padding: 20px 20px 18px 20px;
+}
+
+a:hover li, a:focus li {
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+
+a:focus {
+	outline: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header {
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 725px;
+	padding-left: 100px;
+	border-bottom: 2px solid #cccccc;
+}
+
+#name {
+	float: left;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 12px;
+}
+
+nav {
+	float: right;
+	margin-right: 150px;
+	background-color: #ffffff;
+}
+
+#padding_div {
+	height: 75px;
+}
+
+.container {
+	margin-left: 50px;
+	width: 100%;
+}
+
+#content {
+	float: left;
+	width: 610px;
+	background-color: #ffffff;
+	border: 2px solid #dddddd;
+	padding: 20px;
+}
+
+#profile_pic {
+	width: 33%;
+	float: left;
+	margin: 20px 20px 20px 0;
+}
+
+#sidebar {
+	float: right;
+	width: 230px;
+	background-color: #ffffff;
+	text-align: center;
+	border: 2px solid #dddddd;
+	padding: 20px;
+}
+
+footer {
+	font-size: 8pt;
+	background-color: gray;
+	color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0 20px 0;
+}
+
+.project-left {
+	float: left;
+	margin: 10px 10px 10px 50px;
+}
+
+.project-right {
+	float: right;
+	margin: 10px 50px 10px 10px;
+}
+
+.text {
+	line-height: 150%;
+}
+
+.clear {
+	clear: both;
+	margin: 0;
+}
