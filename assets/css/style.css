@@ -326,6 +326,7 @@ form {
 	}
 
 	header {
+		position: static;
 		padding: 0;
 		text-align: center;
 		min-width: 300px;
@@ -374,5 +375,9 @@ form {
 
 	.project_name {
 		width: 102%;
+	}
+
+	#padding_div {
+		height: 10px;
 	}
 }
