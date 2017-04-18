@@ -198,6 +198,19 @@ form {
 		width: 35%;
 	}
 
+	.project-left, .project-right {
+		float: none;
+		margin: 10px 0;
+	}
+
+	.project_image {
+		width: 100%;
+	}
+
+	.project_name {
+		width: 102%;
+	}
+
 	h2 {
 		font-size: 1.3em;
 	}
@@ -242,12 +255,14 @@ form {
 	}
 
 	#content {
-		float: none;
+		float: left;
+		min-width: 550px;
 		width: 100%;
 	}
 
 	#sidebar {
-		float: none;
+		float: left;
+		min-width: 550px;
 		width: 100%;
 		margin: 20px auto;
 		text-align: left;
@@ -264,7 +279,27 @@ form {
 	}
 
 	a img {
-		width: 64px;
+		width: auto;
+	}
+
+	.project-left {
+		position: relative;
+		float: left;
+		margin: 10px 20px 10px 10px;
+	}
+
+	.project-right {
+		position: relative;
+		float: right;
+		margin: 10px 10px 10px 20px;
+	}
+
+	.project_image {
+		width: auto;
+	}
+
+	.project_name {
+		width: 206px;
 	}
 }
 
@@ -274,6 +309,15 @@ form {
 	}
 
 	.container {
+		min-width: 300px;
+	}
+
+	#content {
+		min-width: 300px;
+	}
+
+	#sidebar {
+		width: 100%;
 		min-width: 300px;
 	}
 
@@ -313,5 +357,18 @@ form {
 
 	h2 {
 		font-size: 1.5em;
+	}
+
+	.project-left, .project-right {
+		float: none;
+		margin: 20px 0;
+	}
+
+	.project_image {
+		width: 100%;
+	}
+
+	.project_name {
+		width: 102%;
 	}
 }
