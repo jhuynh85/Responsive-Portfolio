@@ -2,6 +2,8 @@ html {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #4aaaa5;
 	width: 100%;
+	position: relative;
+    min-height: 100%;
 }
 
 h1, h2, h3 {
@@ -20,6 +22,7 @@ h2 {
 body {
 	width: 100%;
 	background-image: url("../images/concrete_seamless.png");
+	margin: 0 0 30px;
 }
 
 ul {
@@ -107,7 +110,6 @@ nav {
 }
 
 footer {
-	position: fixed;
 	z-index: 3;
 	font-size: 8pt;
 	background-color: gray;
@@ -116,8 +118,10 @@ footer {
 	left: 0;
 	text-align: center;
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px 0 0;
 	border-top: 7px solid #4aaaa5;
+	position: absolute;
+    height: 30px;
 }
 
 .project-left {
