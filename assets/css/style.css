@@ -1,6 +1,7 @@
 html {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: #4aaaa5;
+	width: 100%;
 }
 
 h1, h2, h3 {
@@ -27,7 +28,7 @@ ul {
 
 li {
 	display: inline;
-	padding: 20px 20px 20px 20px;
+	padding: 20px;
 }
 
 li:hover {
@@ -91,8 +92,8 @@ nav {
 }
 
 #profile_pic {
-	width: 33%;
 	float: left;
+	width: 250px;
 	margin: 20px 20px 20px 0;
 }
 
@@ -115,7 +116,7 @@ footer {
 	left: 0;
 	text-align: center;
 	width: 100%;
-	padding: 20px 0 20px 0;
+	padding: 20px 0;
 	border-top: 7px solid #4aaaa5;
 }
 
@@ -159,7 +160,7 @@ form {
 	text-decoration: none;
 	background-color: #4aaaa5;
 	color: #ffffff;
-	padding: 10px 20px 10px 20px;
+	padding: 10px 20px;
 }
 
 .text {
@@ -173,4 +174,144 @@ form {
 
 .bar {
 	color: #cccccc;
+}
+
+@media screen and (max-width: 980px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	.container {
+		width: 85%;
+	}
+
+	#profile_pic {
+		float: none;
+		width: 100%;
+	}
+
+	#content {
+		width: 60%;
+	}
+
+	#sidebar {
+		width: 35%;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	nav {
+		margin-right: 5%;
+	}
+
+	header {
+		min-width: 650px;
+	}
+
+	a img {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 0.75rem;
+	}
+
+	nav {
+		margin-right: 15%;
+	}
+
+	ul {
+		padding-top: 18px;
+	}
+
+	li {
+		padding: 17px;
+	}
+
+	.container {
+		width: 85%;
+		padding: 10px;
+	}
+
+	#content {
+		float: none;
+		width: 100%;
+	}
+
+	#sidebar {
+		float: none;
+		width: 100%;
+		margin: 20px auto;
+		text-align: left;
+		padding: 40px;
+	}
+
+	#profile_pic {
+		float: left;
+		width: 50%;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	a img {
+		width: 64px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	.container {
+		min-width: 300px;
+	}
+
+	header {
+		padding: 0;
+		text-align: center;
+		min-width: 300px;
+	}
+
+	nav, ul {
+		width: 100%;
+		margin: 0;
+		float: none;
+		padding: 0;
+	}
+
+
+	li , span {
+		display: inline-block;
+		float: left;
+		padding: 10px 0;
+	}
+
+	li {
+		width: 32%;
+	}
+
+	#name {
+		width: 100%;
+		padding: 10px 0;
+		float: none;
+	}
+	
+	#profile_pic {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
 }
